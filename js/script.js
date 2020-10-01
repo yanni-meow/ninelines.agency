@@ -56,7 +56,7 @@ window.onload = function loadWind() {
       duration: 600,
       fill: 'forwards',
   });
-  let from = 0;    
+  let from = (125*(totalChecked-1));    
   let to = (125*totalChecked);
       scoreGrowing(from, to);
 
