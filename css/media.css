@@ -1,0 +1,68 @@
+@media(max-width:767px) {
+    .skill__form__list {
+        max-height: 240px;
+    }
+    
+    .skill__form__list li {
+        width: 33%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 22px;
+    } 
+
+    .footer__meter {
+        align-self: flex-start;
+    }
+
+    .footer__score {
+        align-self: flex-end;
+        width: 45%;
+        padding: 16px 10px;
+        text-align: right;
+    }
+}
+
+@media(max-width:424px) {
+    header {
+        min-height: 200px;
+    }
+
+    .header__photo {
+        flex: 1;
+        padding: 10px 0 0 10px;
+    }
+    
+    .header__form {
+        background: url(../img/shape-top.png) no-repeat;
+        background-size: 45%;
+        background-position: right 2% bottom 10%;
+    }
+
+    .header__form input {
+        font-size: 12px;
+    }
+
+    .skill__box {
+        text-align: center;
+    }
+
+    .skill__form__list {
+        max-height: 360px;
+        align-items: center;
+        justify-content: center;    
+    }
+
+    .skill__form__list li {
+        width: 32%;
+        text-align: justify;
+    }
+
+    .footer__meter, .footer__score {
+        width: fit-content;
+        align-self: center;
+        text-align: center;
+    }
+}

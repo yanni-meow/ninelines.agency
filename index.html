@@ -1,0 +1,94 @@
+<!DOCTYPE html >
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ninelines.agency</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header__photo">
+                <img src="img/avatar_mya.png" alt="он крут">
+            </div>
+            <form class="header__form" action="#" name="UserData">
+                <input type="text" name="name" id="name" placeholder="Имя" value="Янина">
+                <input type="date" name="bday" id="bday" max="2020-01-01" placeholder="Дата рождения" value="1993-12-02">
+                <input type="text" name="city" id="city" placeholder="Город" value="Москва">
+                <input type="email" name="mail" id="mail" placeholder="Контактные данные" value="yanni.mamporiya@gmail.com">
+            </form>
+        </header>
+        <section class="skill__box">
+            <h2>Навыки</h2>
+            <form class="skill__form" action="#" name="UserSkills">
+                <ul class="skill__form__list">
+                    <li>
+                        <input class="checkbox__style" type="checkbox" name="html5" id="s1" checked>
+                        <label class="checkbox__label" for="s1">HTML5</label>
+                    </li>
+                    <li>
+                        <input class="checkbox__style" type="checkbox" name="css3" id="s2" checked>
+                        <label class="checkbox__label" for="s2">CSS3</label>
+                    </li>
+                    <li>
+                        <input class="checkbox__style" type="checkbox" name="бэм" id="s3" checked>
+                        <label class="checkbox__label" for="s3">БЭМ</label>
+                    </li>
+                    <li>
+                        <input class="checkbox__style" type="checkbox" name="sass" id="s4" checked>
+                        <label class="checkbox__label" for="s4">SASS</label>
+                    </li>
+                    <li>
+                        <input class="checkbox__style" type="checkbox" name="less" id="s5">
+                        <label class="checkbox__label" for="s5">LESS</label>
+                    </li>
+                    <li>
+                        <input class="checkbox__style" type="checkbox" name="gulp" id="s6" checked>
+                        <label class="checkbox__label" for="s6">Gulp</label>
+                    </li>
+                    <li>
+                        <input class="checkbox__style" type="checkbox" name="vanillajs" id="s7">
+                        <label class="checkbox__label" for="s7">VanillaJS</label>
+                    </li>
+                    <li>
+                        <input class="checkbox__style" type="checkbox" name="angular" id="s8">
+                        <label class="checkbox__label" for="s8">Angular</label>
+                    </li>
+                    <li>
+                        <input class="checkbox__style" type="checkbox" name="jquery" id="s9" checked>
+                        <label class="checkbox__label" for="s9">JQuery</label>
+                    </li>
+                    <li>
+                        <input class="checkbox__style" type="checkbox" name="git" id="s10" checked>
+                        <label class="checkbox__label" for="s10">Git</label>
+                    </li>
+                    <li>
+                        <input class="checkbox__style" type="checkbox" name="foundation" id="s11">
+                        <label class="checkbox__label" for="s11">Foundation</label>
+                    </li>
+                    <li>
+                        <input class="checkbox__style" type="checkbox" name="bootstrap" id="s12">
+                        <label class="checkbox__label" for="s12">Bootstrap</label>
+                    </li>
+                </ul>
+            </form>
+        </section>
+        <footer>
+            <div class="footer__meter">
+                <img src="img/meter.png" alt=" ">
+                <img id="pointer" src="img/pointer.png" alt=" ">
+            </div>
+            <div class="footer__score">
+                <h2>Мой уровень владения Java Script</h2>
+                <p id="score"> 0 </p>
+            </div>
+        </footer>
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>
