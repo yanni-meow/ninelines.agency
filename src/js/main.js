@@ -1,3 +1,6 @@
+import './vendor';
+import './helpers';
+
 // стрелка, чекбоксы, счётчик
 let pointer = document.getElementById('pointer');
 let checkList = document.querySelectorAll('.checkbox__style');

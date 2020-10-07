@@ -1,38 +1,13 @@
-*{
-	padding: 0;
-	margin: 0;
-	border: 0;
-}
-*,*:before,*:after{
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
+// stylelint-disable at-rule-empty-line-before
 
-nav,footer,header,aside{display: block;}
-
-html,body{
-	height: 100%;
-	width: 100%;
-	font-size: 12px;
-	line-height: 1;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-}
-input,button,textarea{font-family:inherit;}
-
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+@import "variables";
+@import "functions";
+@import "mixins";
+@import "sprites";
+@import "fonts";
+@import "vendor";
+@import "base";
+@import "helpers";
 
 body {
     background: #f0f0f0;
@@ -58,7 +33,7 @@ header {
     min-height: 252px;
     
     justify-content: space-between;
-    background: url(../img/bg.png);
+    background: url(../images/png/bg.png);
 }
 
 .header__photo {
@@ -74,7 +49,7 @@ header {
     padding: 27px 22px 35px 6px;
 
     justify-content: space-between;
-    background: url(../img/shape-top.png) no-repeat;
+    background: url(../images/png/shape-top.png) no-repeat;
     background-position: right 2% bottom 10%;
 }
 
@@ -104,7 +79,7 @@ h2 {
 .skill__box {
     padding: 32px 22px 18px;
     flex: 1;
-    background: url(../img/bg.png);
+    background: url(../images/png/bg.png);
     border-top: 2px solid #f0f0f0a4;
     border-bottom: 2px solid #f0f0f0a4;
 }
@@ -159,7 +134,7 @@ h2 {
 }
 
 .checkbox__style:checked ~ .checkbox__label::before {
-    background: #0093d7 url(../img/checked.png) no-repeat center;
+    background: #0093d7 url(../images/png/checked.png) no-repeat center;
 }
 
 .checkbox__style:active ~ .checkbox__label::before {
@@ -170,7 +145,7 @@ footer {
     display: flex;
     justify-content: space-around;
     flex: 1;
-    background: url(../img/bg.png);
+    background: url(../images/png/bg.png);
     padding: 60px 22px;
 }
 
@@ -202,3 +177,6 @@ footer {
     color: rgb(0, 147, 215);
     line-height: 0.44;      
 }
+
+
+@import "media";

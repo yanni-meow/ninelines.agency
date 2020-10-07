@@ -1,0 +1,67 @@
+extends pug/base
+
+prepend vars
+	//-
+append vars
+	//-
+append styles
+	link(rel="stylesheet", href!=`${baseDir}css/main.css?v=${Date.now()}`)
+
+block content
+	
+	.container
+		header
+			.header__photo
+				img(src='images/png/avatar_mya.png' alt='он крут')
+			form.header__form(action='#' name='UserData')
+				input#name(type='text' name='name' placeholder='Имя' value='Янина')
+				input#bday(type='date' name='bday' max='2020-01-01' placeholder='Дата рождения' value='1993-12-02')
+				input#city(type='text' name='city' placeholder='Город' value='Москва')
+				input#mail(type='email' name='mail' placeholder='Контактные данные' value='yanni.mamporiya@gmail.com')
+		section.skill__box
+			h2 Навыки
+			form.skill__form(action='#' name='UserSkills')
+				ul.skill__form__list
+					li
+						input#s1.checkbox__style(type='checkbox' name='html5' checked='')
+						label.checkbox__label(for='s1') HTML5
+					li
+						input#s2.checkbox__style(type='checkbox' name='css3' checked='')
+						label.checkbox__label(for='s2') CSS3
+					li
+						input#s3.checkbox__style(type='checkbox' name='бэм' checked='')
+						label.checkbox__label(for='s3') &Bcy;&Ecy;&Mcy;
+					li
+						input#s4.checkbox__style(type='checkbox' name='sass' checked='')
+						label.checkbox__label(for='s4') SASS
+					li
+						input#s5.checkbox__style(type='checkbox' name='less')
+						label.checkbox__label(for='s5') LESS
+					li
+						input#s6.checkbox__style(type='checkbox' name='gulp' checked='')
+						label.checkbox__label(for='s6') Gulp
+					li
+						input#s7.checkbox__style(type='checkbox' name='vanillajs')
+						label.checkbox__label(for='s7') VanillaJS
+					li
+						input#s8.checkbox__style(type='checkbox' name='angular')
+						label.checkbox__label(for='s8') Angular
+					li
+						input#s9.checkbox__style(type='checkbox' name='jquery' checked='')
+						label.checkbox__label(for='s9') JQuery
+					li
+						input#s10.checkbox__style(type='checkbox' name='git' checked='')
+						label.checkbox__label(for='s10') Git
+					li
+						input#s11.checkbox__style(type='checkbox' name='foundation')
+						label.checkbox__label(for='s11') Foundation
+					li
+						input#s12.checkbox__style(type='checkbox' name='bootstrap')
+						label.checkbox__label(for='s12') Bootstrap
+		footer
+			.footer__meter
+				img(src='images/png/meter.png' alt=' ')
+				img#pointer(src='images/png/pointer.png' alt=' ')
+			.footer__score
+				h2 Мой уровень владения Java Script
+				p#score  0 
