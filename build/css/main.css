@@ -578,7 +578,8 @@ h2 {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
-          user-select: none; }
+          user-select: none; 
+  transition: all .5s ease;}
 
 .checkbox__label:hover {
   -webkit-transition-delay: 70ms;
